@@ -8,22 +8,22 @@ public class Main {
         // task1
 
         char clientOS = 0;
-        if (clientOS == 1){
+        if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
-        }else if (clientOS == 0){
+        } else if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
 
         // task 2
 
-            int clientDeviceYear= 2012;
-        if (clientOS == 0 && clientDeviceYear < 2015){
+        int clientDeviceYear = 2012;
+        if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("установите облегчённую версию приложения для iOS по ссылке");
-        }else if(clientOS == 0 && clientDeviceYear >= 2015){
+        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        }else if (clientOS == 1 && clientDeviceYear < 2015){
+        } else if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите версию облегченную версию приложения для Android по ссылке");
-        }else if(clientOS == 1 && clientDeviceYear >= 2015){
+        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
@@ -31,30 +31,33 @@ public class Main {
         // task 3
 
         int year = 2021;
-        if (year >= 1584){
-        } if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+        if (year >= 1584) {
+        }
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(" Год является високосным! ");
-        }else {
+        } else {
             System.out.println(" Год не является високосным!");
         }
 
         // task 4
 
         int cardDistance = 20;
-        if (cardDistance < 20){
+        if (cardDistance < 20) {
             System.out.println("Потребуется дней - 1");
-        }else if (cardDistance >= 20 && cardDistance <= 60){
+        } else if (cardDistance >= 20 && cardDistance <= 60) {
             System.out.println("потребуется дней - 2");
-        }else if (cardDistance > 60 && cardDistance <= 100){
+        } else if (cardDistance > 60 && cardDistance <= 100) {
             System.out.println("потребуется дней - 3");
-        }else{System.out.println(" Доставки нет");}
+        } else {
+            System.out.println(" Доставки нет");
+        }
 
 
         // task 5
 
         int monthNumber = 12;
 
-        switch (monthNumber){
+        switch (monthNumber) {
             case 1:
                 System.out.println("Январь-зима");
                 break;
@@ -92,8 +95,6 @@ public class Main {
                 System.out.println("Декабрь-зима");
 
         }
-
-
 
 
     }
