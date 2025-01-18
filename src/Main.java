@@ -31,8 +31,7 @@ public class Main {
         // task 3
 
         int year = 2021;
-        if (year > 1584){
-            System.out.println("год должен быть больше 1584");
+        if (year >= 1584){
         } if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
             System.out.println(" Год является високосным! ");
         }else {
@@ -41,10 +40,10 @@ public class Main {
 
         // task 4
 
-        int cardDistance = 15;
+        int cardDistance = 20;
         if (cardDistance < 20){
             System.out.println("Потребуется дней - 1");
-        }else if (cardDistance > 20 && cardDistance < 60){
+        }else if (cardDistance >= 20 && cardDistance <= 60){
             System.out.println("потребуется дней - 2");
         }else if (cardDistance > 60 && cardDistance <= 100){
             System.out.println("потребуется дней - 3");
