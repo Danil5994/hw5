@@ -5,7 +5,8 @@ import java.time.Year;
 public class Main {
     public static void main(String[] args) {
 
-        // task1
+        System.out.println("Task 1");
+
 
         char clientOS = 0;
         if (clientOS == 1) {
@@ -14,88 +15,73 @@ public class Main {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
 
-        // task 2
+        System.out.println("Task 2");
 
         int clientDeviceYear = 2012;
         if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("установите облегчённую версию приложения для iOS по ссылке");
-        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
+        }
+        if (clientOS == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOS == 1 && clientDeviceYear < 2015) {
+        }
+        if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите версию облегченную версию приложения для Android по ссылке");
-        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
+        }
+        if (clientOS == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
 
-        // task 3
+        System.out.println("Task 3");
 
-        int year = 2021;
+
+        int year = 2020;
         if (year >= 1584) {
-        }
-        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-            System.out.println(" Год является високосным! ");
-        } else {
-            System.out.println(" Год не является високосным!");
-        }
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                System.out.println(" Год является високосным! ");
+            } else {
+                System.out.println(" Год не является високосным!");
+            }
 
-        // task 4
-
-        int cardDistance = 20;
-        if (cardDistance < 20) {
-            System.out.println("Потребуется дней - 1");
-        } else if (cardDistance >= 20 && cardDistance <= 60) {
-            System.out.println("потребуется дней - 2");
-        } else if (cardDistance > 60 && cardDistance <= 100) {
-            System.out.println("потребуется дней - 3");
-        } else {
-            System.out.println(" Доставки нет");
-        }
+            System.out.println("Task 4");
 
 
-        // task 5
+            int cardDistance = 20;
+            if (cardDistance < 20) {
+                System.out.println("Потребуется дней - 1");
+            } else if (cardDistance >= 20 && cardDistance <= 60) {
+                System.out.println("потребуется дней - 2");
+            } else if (cardDistance > 60 && cardDistance <= 100) {
+                System.out.println("потребуется дней - 3");
+            } else {
+                System.out.println(" Доставки нет");
+            }
 
-        int monthNumber = 12;
 
-        switch (monthNumber) {
-            case 1:
-                System.out.println("Январь-зима");
-                break;
-            case 2:
-                System.out.println("Февраль-зима");
-                break;
-            case 3:
-                System.out.println("Март-весна");
-                break;
-            case 4:
-                System.out.println("Апрель-весна");
-                break;
-            case 5:
-                System.out.println("Май-весна");
-                break;
-            case 6:
-                System.out.println("Июнь-лето");
-                break;
-            case 7:
-                System.out.println("Июль-лето");
-                break;
-            case 8:
-                System.out.println("Август-лето");
-                break;
-            case 9:
-                System.out.println("Сентябрь-осень");
-                break;
-            case 10:
-                System.out.println("Октябрь-осень");
-                break;
-            case 11:
-                System.out.println("Ноябрь-осень");
-                break;
-            case 12:
-                System.out.println("Декабрь-зима");
+            System.out.println("Task 5");
+
+
+            int monthNumber = 12;
+
+            switch (monthNumber) {
+                case 12, 1, 2:
+                    System.out.println("зима");
+                    break;
+                case 3, 4, 5:
+                    System.out.println("весна");
+                    break;
+                case 6, 7, 8:
+                    System.out.println("лето");
+                    break;
+                case 9, 10, 11:
+                    System.out.println("осень");
+                    break;
+                default:
+                    System.out.println("такого месяца нет");
+
+            }
+
 
         }
-
-
     }
-}
+    }
